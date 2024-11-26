@@ -10,12 +10,9 @@ cd /var/www/rails-app
 git pull origin main
 
 bundle install --deployment --without development test
-
-RAILS_ENV=production rails db:migrate #db migration
-
-RAILS_ENV=production rails assets:precompile
-
-sudo systemctl restart puma
+RAILS_ENV=production bundle exec rake db:migrate
+RAILS_ENV=production bundle exec rails webpacker:compile
+RAILS_ENV=production bundle exec puma -C config/puma.rb
 EOF
 
 echo "Deployment successfully completed :)"

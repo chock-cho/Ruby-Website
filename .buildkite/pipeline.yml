@@ -7,6 +7,11 @@ steps:
     command:
       - "RAILS_ENV=production rails db:migrate"
 
+  - label: ":hammer: Install and Compile Webpacker"
+    command:
+      - "RAILS_ENV=production bundle exec rails webpacker:install"
+      - "RAILS_ENV=production bundle exec rails webpacker:compile"
+
   - label: ":test_tube: Run tests"
     command:
       - "bundle exec rspec"
