@@ -1,6 +1,5 @@
 # Ruby-Website
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 03ed272a6dd6510b12f93729607a2d23582e74bb
-Ruby on Rails로 만드는 간단한 게시판 레포
+- Ruby on Rails로 만드는 간단한 게시판 CRUD 레포
+### 기술 스택
+---
+- [Ruby on Rails](https://github.com/rails/rails)
