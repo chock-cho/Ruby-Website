@@ -1,8 +1,9 @@
 steps:
   - label: ":git: Clone repository"
     command:
+      - "source /var/www/rails-app/Ruby-Website/.env"
       - "git config --global credential helper cache"
-      - "git clone https://github.com/chock-cho/Ruby-Website.git /var/www/rails-app/Ruby-Website" 
+      - "git clone https://${GITHUB_USERNAME}:${GITHUB_PAT}@github.com/chock-cho/Ruby-Website.git /var/www/rails-app/Ruby-Website" 
     agents:
       queue: "default"
 
