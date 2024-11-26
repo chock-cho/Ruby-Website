@@ -13,7 +13,7 @@ steps:
 
   - label: ":rocket: Deploy to Production"
     command:
-      - "./deploy.sh"
+      - "./.buildkite/deploy.sh"
     branches: "main"
     agents:
       queue: "default"
