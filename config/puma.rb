@@ -1,21 +1,21 @@
-	try_filuma 설정 파일
+# Puma configuration file for Rails application
 
-	# 서버를 실행할 포트와 바인딩
-	port ENV.fetch("PORT") { 3000 }
-	#
-	# # 프로덕션 환경에서는 UNIX 소켓을 사용할 수 있습니다.
-	# # sock 파일을 사용하려면 아래 코드를 활성화하세요.
-	# # bind "unix:///var/www/myapp/shared/tmp/sockets/puma.sock"
-	#
-	 environment ENV.fetch("RAILS_ENV") { "development" }
-	#
-	 workers ENV.fetch("WEB_CONCURRENCY") { 2 }
-	 threads_count = ENV.fetch("RAILS_MAX_THREADS") { 5 }
-	 threads threads_count, threads_count
-	#
-	 preload_app!
-	#
-	 on_worker_boot do
-	   ActiveRecord::Base.establish_connection if defined?(ActiveRecord)
-	  end
-	#
+# Specifies the number of threads to use
+threads_count = ENV.fetch("RAILS_MAX_THREADS") { 5 }
+threads threads_count, threads_count
+
+# Specifies the port to bind to
+port        ENV.fetch("PORT") { 3000 }
+
+# Specifies the environment
+environment ENV.fetch("RAILS_ENV") { "production" }
+
+# Specifies the number of worker processes to boot
+workers ENV.fetch("WEB_CONCURRENCY") { 2 }
+preload_app!
+
+# Code to run before each worker boots
+on_worker_boot do
+  ActiveRecord::Base.establish_connection if defined?(ActiveRecord)
+end
+

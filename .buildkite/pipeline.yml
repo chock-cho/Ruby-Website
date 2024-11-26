@@ -1,24 +1,26 @@
 steps:
+  - label: ":git: Clone repository"
+    command:
+      - export GIT_SSH_COMMAND="ssh -i /var/lib/buildkite-agent/.ssh/id_rsa -o IdentitiesOnly=yes"
+      - "git clone git@github.com:chock-cho/Ruby-Website.git /var/www/rails-app/Ruby-Website"
+    agents:
+      queue: "default"
+
   - label: ":bundle: Install dependencies"
     command:
-      - "bundle install"
+      - "cd /var/www/rails-app/Ruby-Website && bundle install"
+    agents:
+      queue: "default"
 
   - label: ":database: Database migration"
     command:
-      - "RAILS_ENV=production rails db:migrate"
-
-  - label: ":hammer: Install and Compile Webpacker"
-    command:
-      - "RAILS_ENV=production bundle exec rails webpacker:install"
-      - "RAILS_ENV=production bundle exec rails webpacker:compile"
-
-  - label: ":test_tube: Run tests"
-    command:
-      - "bundle exec rspec"
+      - "cd /var/www/rails-app/Ruby-Website && RAILS_ENV=production rails db:migrate"
+    agents:
+      queue: "default"
 
   - label: ":rocket: Deploy to Production"
     command:
-      - "./.buildkite/deploy.sh"
+      - "cd /var/www/rails-app/Ruby-Website && ./deploy.sh"
     branches: "main"
     agents:
       queue: "default"

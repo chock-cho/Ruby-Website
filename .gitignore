@@ -60,3 +60,5 @@ node_modules/
 # Ignore test temp files
 /test/tmp/
 /test/version_tmp/
+
+/config/master.key
