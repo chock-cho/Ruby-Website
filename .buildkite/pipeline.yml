@@ -4,6 +4,7 @@ steps:
       - "eval \$(ssh-agent -s)"
       - "ssh-add /var/lib/buildkite-agent/.ssh/id_rsa"
       - "export GIT_SSH_COMMAND='ssh -i /var/lib/buildkite-agent/.ssh/id_rsa -o IdentitiesOnly=yes'"
+      - "echo \$GIT_SSH_COMMAND"
       - "git clone git@github.com:chock-cho/Ruby-Website.git /var/www/rails-app/Ruby-Website"
     agents:
       queue: "default"
