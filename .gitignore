@@ -1,0 +1,62 @@
+# Temporary files and directories
+/tmp/*
+!/tmp/.keep
+/log/*
+!/log/.keep
+/storage/*
+!/storage/.keep
+
+# Ignore uploaded files in development
+/public/system
+/public/uploads
+
+# Ignore sensitive files
+.env
+.env*.local
+config/master.key
+config/credentials.yml.enc
+
+# Ignore precompiled assets
+/public/assets
+/public/packs
+/public/packs-test
+/yarn-error.log
+.yarn-integrity
+node_modules/
+
+/log/
+/tmp/
+/storage/
+/public/
+/vendor/
+
+# Ignore bundler config
+/.bundle
+
+# Ignore Byebug history
+.byebug_history
+
+# Ignore IDE-specific files
+.idea/
+.vscode/
+*.swp
+
+# Ignore generated documentation and reports
+/coverage/
+/spec/reports/
+/doc/
+/.yardoc
+
+# Ignore vendor dependencies
+/vendor/bundle
+/vendor/assets/bower_components
+
+# Ignore system-specific files
+*.rbc
+.DS_Store
+*.bak
+*.tmp
+
+# Ignore test temp files
+/test/tmp/
+/test/version_tmp/
