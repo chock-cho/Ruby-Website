@@ -1,0 +1,19 @@
+steps:
+  - label: ":bundle: Install dependencies"
+    command:
+      - "bundle install"
+
+  - label: ":database: Database migration"
+    command:
+      - "RAILS_ENV=production rails db:migrate"
+
+  - label: ":test_tube: Run tests"
+    command:
+      - "bundle exec rspec"
+
+  - label: ":rocket: Deploy to Production"
+    command:
+      - "./deploy.sh"
+    branches: "main"
+    agents:
+      queue: "default"
