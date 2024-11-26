@@ -105,3 +105,8 @@ nohup: ignoring input
 [38;5;48m2024-11-26 22:42:14 INFO  [0m [38;5;243mip-172-31-32-80-1[0m [0m[Process] Process is running with PID: 10548[0m 
 [38;5;48m2024-11-26 22:42:21 INFO  [0m [38;5;243mip-172-31-32-80-1[0m [0mProcess with PID: 10548 finished with Exit Status: 128, Signal: nil[0m 
 [38;5;48m2024-11-26 22:42:22 INFO  [0m [38;5;243mip-172-31-32-80-1[0m [0mFinished job 01936aa3-aec3-4d64-b4d3-b2dd710b888e[0m 
+[38;5;48m2024-11-26 22:56:52 INFO  [0m [38;5;243mip-172-31-32-80-1[0m [0mAssigned job 01936ab1-18ed-472d-b079-40a86693426a. Accepting...[0m 
+[38;5;48m2024-11-26 22:56:53 INFO  [0m [38;5;243mip-172-31-32-80-1[0m [0mStarting job 01936ab1-18ed-472d-b079-40a86693426a[0m 
+[38;5;48m2024-11-26 22:56:54 INFO  [0m [38;5;243mip-172-31-32-80-1[0m [0m[Process] Process is running with PID: 10644[0m 
+[38;5;48m2024-11-26 22:57:01 INFO  [0m [38;5;243mip-172-31-32-80-1[0m [0mProcess with PID: 10644 finished with Exit Status: 128, Signal: nil[0m 
+[38;5;48m2024-11-26 22:57:02 INFO  [0m [38;5;243mip-172-31-32-80-1[0m [0mFinished job 01936ab1-18ed-472d-b079-40a86693426a[0m 
