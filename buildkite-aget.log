@@ -135,3 +135,13 @@ nohup: ignoring input
 [38;5;48m2024-11-26 23:24:31 INFO  [0m [38;5;243mip-172-31-32-80-1[0m [0m[Process] Process is running with PID: 10862[0m 
 [38;5;48m2024-11-26 23:24:38 INFO  [0m [38;5;243mip-172-31-32-80-1[0m [0mProcess with PID: 10862 finished with Exit Status: 128, Signal: nil[0m 
 [38;5;48m2024-11-26 23:24:39 INFO  [0m [38;5;243mip-172-31-32-80-1[0m [0mFinished job 01936aca-6461-49ae-bba2-1aeee637dccd[0m 
+[38;5;48m2024-11-26 23:29:48 INFO  [0m [38;5;243mip-172-31-32-80-1[0m [0mAssigned job 01936acf-3ebc-4ee3-a7a9-fca268c26ceb. Accepting...[0m 
+[38;5;48m2024-11-26 23:29:49 INFO  [0m [38;5;243mip-172-31-32-80-1[0m [0mStarting job 01936acf-3ebc-4ee3-a7a9-fca268c26ceb[0m 
+[38;5;48m2024-11-26 23:29:49 INFO  [0m [38;5;243mip-172-31-32-80-1[0m [0m[Process] Process is running with PID: 10917[0m 
+[38;5;48m2024-11-26 23:29:56 INFO  [0m [38;5;243mip-172-31-32-80-1[0m [0mProcess with PID: 10917 finished with Exit Status: 128, Signal: nil[0m 
+[38;5;48m2024-11-26 23:29:57 INFO  [0m [38;5;243mip-172-31-32-80-1[0m [0mFinished job 01936acf-3ebc-4ee3-a7a9-fca268c26ceb[0m 
+[38;5;48m2024-11-26 23:53:17 INFO  [0m [38;5;243mip-172-31-32-80-1[0m [0mAssigned job 01936ae4-bf71-4d5e-b11a-2b91705c781f. Accepting...[0m 
+[38;5;48m2024-11-26 23:53:17 INFO  [0m [38;5;243mip-172-31-32-80-1[0m [0mStarting job 01936ae4-bf71-4d5e-b11a-2b91705c781f[0m 
+[38;5;48m2024-11-26 23:53:18 INFO  [0m [38;5;243mip-172-31-32-80-1[0m [0m[Process] Process is running with PID: 11525[0m 
+[38;5;48m2024-11-26 23:53:25 INFO  [0m [38;5;243mip-172-31-32-80-1[0m [0mProcess with PID: 11525 finished with Exit Status: 128, Signal: nil[0m 
+[38;5;48m2024-11-26 23:53:26 INFO  [0m [38;5;243mip-172-31-32-80-1[0m [0mFinished job 01936ae4-bf71-4d5e-b11a-2b91705c781f[0m 
